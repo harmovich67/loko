@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task</title>
 
-    <!-- Links -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome للأيقونات -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="box-head">
-                <div class="logo">
-                    <h3>مرحب</h3>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">الرئيسية</a></li>
-                        <li><a href="#">نبذة</a></li>
-                        <li><a href="#">خدماتنا</a></li>
-                        <li><a href="#">تواصل معنا</a></li>
+
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">شعاري</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="تبديل التنقل">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">حولنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتصل بنا</a>
+                        </li>
                     </ul>
+   
                 </div>
             </div>
-        </div>
+        </nav>
+
     </header>
 
     <!-- Page Body -->
@@ -39,7 +61,10 @@
                         <div class="txt-box">
                             <h3 class="mb-4">نبذة</h3>
                             <p>
-                                أعزائي الطلبة ومعلمو الصفوف المختلفة أهلا وسهلا بكم نقدم لكم في هذا المقال قطع إملاء مختارة بعناية لتستخدمها عزيزي الطالب والمعلم في التدريب علي الإملاء ومعالجة أخطاء الطلبة الإملائية، وحرصنا في عرض هذه القطع علي أن تكون شاملة للهمزات والتاء المربوطة والمفتوحة،  و قطع الاملاء تصل لكل من: 
+                                أعزائي الطلبة ومعلمو الصفوف المختلفة أهلا وسهلا بكم نقدم لكم في هذا المقال قطع إملاء
+                                مختارة بعناية لتستخدمها عزيزي الطالب والمعلم في التدريب علي الإملاء ومعالجة أخطاء الطلبة
+                                الإملائية، وحرصنا في عرض هذه القطع علي أن تكون شاملة للهمزات والتاء المربوطة والمفتوحة،
+                                و قطع الاملاء تصل لكل من:
                             </p>
                         </div>
                     </div>
@@ -57,12 +82,15 @@
                 <h4>test</h4>
             </div>
         </section>
-        
+
     </div>
-    
+
     <!-- Script -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS و Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

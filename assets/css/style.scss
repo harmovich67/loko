@@ -26,20 +26,38 @@ header {
     background-color: #4A55A2;
     color: #C5DFF8;
 
-    .box-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .navbar {
+        .logo {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-toggler {
+            background: inherit;
+            border: none;
+            outline: none;
 
-        .menu {
-            ul {
-                li {
-                    display: inline-block;
-                    margin-right: 20px;
-                    a {
-                        color: #DDD;
-                    }
+            &:focus {
+                box-shadow: none;
+            }
+
+            span {
+                color: #ffffff;
+            }
+        }
+        .navbar-nav {
+            @media (max-width: 667px) {
+                border-top: 3px solid #9a9494;
+                margin: 20px 0px;
+
+                .nav-item {
+                    margin: 10px 0;
                 }
+            }
+
+            .nav-link {
+                color: #DDD;
+                margin-right: 1rem;
             }
         }
     }
@@ -51,6 +69,11 @@ header {
         margin-bottom: 96px;
         .txt-box {
             padding: 120px 0 40px 0;
+
+            @media (max-width: 667px) {
+                padding: 0px 0;
+            }
+
             h3 {
                 color: #4A55A2;
                 position: relative;

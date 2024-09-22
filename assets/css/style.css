@@ -26,17 +26,34 @@ header {
   background-color: #4A55A2;
   color: #C5DFF8;
 }
-header .box-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .navbar .logo {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-header .box-head .menu ul li {
-  display: inline-block;
-  margin-right: 20px;
+header .navbar .navbar-toggler {
+  background: inherit;
+  border: none;
+  outline: none;
 }
-header .box-head .menu ul li a {
+header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .navbar .navbar-toggler span {
+  color: #ffffff;
+}
+@media (max-width: 667px) {
+  header .navbar .navbar-nav {
+    border-top: 3px solid #9a9494;
+    margin: 20px 0px;
+  }
+  header .navbar .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+header .navbar .navbar-nav .nav-link {
   color: #DDD;
+  margin-right: 1rem;
 }
 
 .all-content .about {
@@ -45,6 +62,11 @@ header .box-head .menu ul li a {
 }
 .all-content .about .txt-box {
   padding: 120px 0 40px 0;
+}
+@media (max-width: 667px) {
+  .all-content .about .txt-box {
+    padding: 0px 0;
+  }
 }
 .all-content .about .txt-box h3 {
   color: #4A55A2;
